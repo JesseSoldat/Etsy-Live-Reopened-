@@ -51,6 +51,7 @@ gulp.task('bower', ['bower:js', 'bower:css']);
 
 gulp.task('bower:js', function() {
 	var files = bower({filter: '**/*.js'});
+	console.log(files);
 	gulp.src(files)
 		.pipe( notifyError() )
 		.pipe( concat('vendor.js') )
@@ -59,6 +60,8 @@ gulp.task('bower:js', function() {
 
 gulp.task('bower:css', function() {
 	var files = bower({filter: ['**/*.css', '**/*.scss']});
+	console.log(files);
+	
 	gulp.src(files)
 		.pipe( notifyError() )
 		.pipe( sass() )

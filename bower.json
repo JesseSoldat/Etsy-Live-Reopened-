@@ -8,16 +8,17 @@
   "license": "ISC",
   "homepage": "",
   "private": true,
-  "ignore": [
+  "ignore": [  
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests" 
   ],
   "dependencies": {
     "normalize.css": "~3.0.2",
     "jquery": "~2.1.4",
-    "underscore": "~1.8.3"
+    "underscore": "~1.8.3",
+    "bootstrap": "^3.3.6"
   }
 }
